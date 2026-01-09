@@ -52,11 +52,14 @@ body {
 .logo {
     font-size: 1.2rem;
     font-weight: bold;
-    z-index: 12;
 }
 
 /* MENU BUTTON */
 .menu-btn {
+    position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 20;
     width: 32px;
     height: 24px;
     background: none;
@@ -65,7 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 15;
+    z-index: 100;
 }
 
 .menu-btn span {
@@ -87,8 +90,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    z-index: 10;
     background-color: var(--color-primary);
-    z-index: 20;
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
